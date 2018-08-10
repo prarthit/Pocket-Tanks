@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Pocket Tanks</title>
+	<link rel="shortcut icon" href="css/images/tanktop.ico">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+<canvas></canvas>
+<div id="stats">
+	<div class="player statBox">
+		<p>Player : <br> <span id="name1">Player_1</span><br><p>Score : <span id="score1">0</span></p></p>
+	</div>
+	<div id="move" class="statBox">
+		<p>Move</p>
+		<button>&#8249;</button>
+		<button>&#8250;</button>
+	</div>
+	<div id="fireAndPower">
+		<button class="statBox">FIRE</button>
+		<div id="power">
+			<p>Power &nbsp;: <input type="text" name="power" value=50></p>
+			<div class="slidecontainer">
+			  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+			</div>
+		</div>
+	</div>
+
+	<div id="angle" class="statBox">
+		<p>Angle</p>
+		<button><i class="material-icons">add</i></button>
+		<input type="text" name="angle_val" value=50>
+		<button><i class="material-icons">remove</i></button>
+	</div>
+	
+	<div class="player statBox" id="player2">
+		<p>Player : <br> <span id="name2">Player_2</span><br><p>Score : <span id="score2">0</span></p></p>
+	</div>
+</div>
+
+<div id="winnerBox">
+	<span>Winner Name!</span>	
+	<br>
+	<button>Play Again?</button>
+</div>
+
+<script type="text/javascript" src="js/terrain.js"></script>
+<script type="text/javascript" src="js/tanks.js"></script>
+<script type="text/javascript" src="js/fire.js"></script>
+<script type="text/javascript" src="js/eventListeners.js"></script>
+<script type="text/javascript" src="js/playerScores.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
